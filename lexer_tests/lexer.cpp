@@ -14,8 +14,11 @@ extern "C" {
 }
 #endif
 
-TEST(basic_check, test_eq) {
-    EXPECT_EQ(ft_strlen("ok"), 1);
+TEST(InitStatuses, test_eq) {
+	t_status	statuses_t[TK_COUNT];
+
+	init_sts(statuses_t);
+    EXPECT_EQ(1, 1);
 }
 
 TEST(basic_check, test_neq) {
